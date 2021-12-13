@@ -10,3 +10,6 @@ echo $project_name
 #runexe
 cd $project_path
 ./$project_name
+
+chmod +x ./easyhttpd
+./easyhttpd
