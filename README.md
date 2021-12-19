@@ -27,3 +27,13 @@ easyhttpd.exe -r ./ -p :8888
 - [x]  file read and write
 - [x]  host ip address
 - [x]  multi platform cross compilation
+
+## Docker镜像
+
+### 构建容器镜像
+
+`docker image build -t <namespace>/easyhttpd:<tag> .`
+
+### 使用容器运行
+
+`docker container run -t -v <local_html_path>:/srv/www -p 8008:8008 <namespace>/easyhttpd:<tag>`
